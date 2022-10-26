@@ -1,7 +1,7 @@
 {
   "name": "alpinejs-scroll-to",
-  "version": "1.0.0",
-  "description": "Description of the plugin",
+  "version": "1.0.1",
+  "description": "Easily add scroll to functionality with options, powered by Alpine JS 🐭",
   "keywords": [
     "Alpine",
     "Alpine JS",

@@ -1,6 +1,6 @@
 # Alpine JS Scroll To
 
-Easily add scroll to functionality with options powered by Alpine JS 🐭
+Easily add scroll to functionality with options, powered by Alpine JS 🐭
 
 ## Install
 
@@ -9,7 +9,7 @@ Easily add scroll to functionality with options powered by Alpine JS 🐭
 ```html
 <script
   defer
-  src="https://unpkg.com/alpinejs-scroll-to@latest/dist/scroll-to.min.js"
+  src="https://unpkg.com/alpinejs-scroll-to@latest/dist/scrollto.min.js"
 ></script>
 
 <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
