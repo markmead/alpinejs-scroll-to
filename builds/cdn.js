@@ -1,5 +1,5 @@
-import FILE from '../src/index.js'
+import scrollto from '../src/index.js'
 
 document.addEventListener('alpine:init', () => {
-  window.Alpine.plugin(FILE)
+  window.Alpine.plugin(scrollto)
 })

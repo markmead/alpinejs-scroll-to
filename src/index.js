@@ -1,8 +1,12 @@
-export default function (Alpine) {
-  Alpine.directive(
-    '[name]',
-    (el, { value, modifiers, expression }, { Alpine, effect, cleanup }) => {}
-  )
+import { useClick } from './useClick'
+import { useInit } from './useInit'
 
-  Alpine.magic('[name]', (el, { Alpine }) => {})
+export default function (Alpine) {
+  Alpine.magic('scrollTo', (el, {}) => (scrollData) => {
+    if (scrollData.targetId) {
+      return useInit(scrollData)
+    }
+
+    useClick(el, scrollData)
+  })
 }

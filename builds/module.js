@@ -1,3 +1,3 @@
-import FILE from '../src/index.js'
+import scrollto from '../src/index.js'
 
-export default FILE
+export default scrollto

@@ -6,12 +6,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Alpine JS Plugin</title>
 
-    <script defer src="./dist/FILE.min.js"></script>
+    <script defer src="./dist/scrollto.min.js"></script>
 
     <script
       defer
       src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"
     ></script>
+
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body> </body>
+  <body x-data x-init="$scrollTo({ targetId: 'AboutContent' })">
+    <header
+      x-scroll-to-header
+      class="fixed h-20 bg-black top-0 text-white inset-x-0 z-50 px-8 flex items-center"
+    >
+      Header
+    </header>
+
+    <div class="max-w-screen-5xl mx-auto py-28 px-8">
+      <nav class="bg-gray-100 flex flex-col p-4 w-64 space-y-4">
+        <a
+          href="#AboutContent"
+          x-on:click.prevent="$scrollTo({ offsetHeader: true, useSmooth: false })"
+        >
+          About
+        </a>
+
+        <a href="#TeamContent" x-on:click.prevent="$scrollTo"> Team </a>
+      </nav>
+
+      <div class="my-[100vh]">
+        <div id="AboutContent" class="p-8 bg-red-100"> About </div>
+
+        <div id="TeamContent" class="p-8 bg-blue-100"> Team </div>
+      </div>
+    </div>
+  </body>
 </html>
