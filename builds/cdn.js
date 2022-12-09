@@ -1,5 +1,3 @@
-import scrollto from '../src/index.js'
+import scrollTo from '../src/index.js'
 
-document.addEventListener('alpine:init', () => {
-  window.Alpine.plugin(scrollto)
-})
+document.addEventListener('alpine:init', () => window.Alpine.plugin(scrollTo))
