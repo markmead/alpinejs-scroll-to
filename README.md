@@ -9,7 +9,7 @@ Easily add scroll to functionality with options, powered by Alpine JS 🐭
 ```html
 <script
   defer
-  src="https://unpkg.com/alpinejs-scroll-to@latest/dist/scrollto.min.js"
+  src="https://unpkg.com/alpinejs-scroll-to@latest/dist/scroll-to.min.js"
 ></script>
 
 <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
@@ -25,9 +25,9 @@ npm install -D alpinejs-scroll-to
 
 ```js
 import Alpine from 'alpinejs'
-import scrollto from 'alpinejs-scroll-to'
+import scrollTo from 'alpinejs-scroll-to'
 
-Alpine.plugin(scrollto)
+Alpine.plugin(scrollTo)
 
 Alpine.start()
 ```
@@ -36,7 +36,7 @@ Alpine.start()
 
 ```html
 <!-- This will scroll to `#AboutContent` on Alpine init -->
-<body x-data x-init="$scrollTo({ targetId: 'AboutContent' })">
+<div x-data x-init="$scrollTo({ targetId: 'AboutContent' })">
   <header x-scroll-to-header class="fixed h-20 top-0 inset-x-0 z-50 ">
     ...
   </header>
@@ -67,7 +67,7 @@ Alpine.start()
       <div id="TeamContent"> Team </div>
     </div>
   </div>
-</body>
+</div>
 ```
 
 ### Options
